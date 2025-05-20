@@ -1,0 +1,293 @@
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<!-- Slick Theme CSS (Optional) -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- jQuery (required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<style>
+  .customer-review-main h2.border_text.heading.title-sm {
+    font-size: 27px;
+    font-weight: 800;
+}
+  
+h2.border_text.heading.title-sm::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #cb1656;
+    margin-top: 10px;
+}
+  .customer-review-main {
+    margin-top: 3rem;
+}
+.customer-review {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 8.57px 0px #0000001A;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 315px;
+}
+.customer-review-section {
+   position: relative;
+   width: 100%;
+   max-width: 90%;
+   padding-top: 3rem;
+   margin: 0 auto;
+}
+.customer-review-image {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.customer-review-image img {
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+    object-fit: cover;
+    margin: auto;
+}
+.customer-review-heading h3 {
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.customer-review-title {
+    padding-top: 19px;
+}
+.customer-review-title span {
+    color: #525252;
+    font-size: 13px;
+    font-family: inter;
+    line-height: 26px;
+}
+  
+.customer-review-content {
+    margin-top: 1.2rem;
+    font-weight: 600;
+}
+.customer-review-content p {
+    color: #000;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 100%;
+    text-align: center;
+}
+button.slick-next.slick-arrow img {
+    width: 50px;
+}
+button.slick-prev.slick-arrow img {
+    width: 50px;
+}
+.customer-review-section .slick-prev {
+    left: -40px;
+}
+
+.customer-review-section .slick-next {
+    right: -40px;
+}
+
+.customer-review-main .slick-next, .customer-review-main .slick-prev {
+    width: 34px;
+    height: 34px;
+}
+
+.customer-review .customer-review-title span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.customer-review .customer-review-content p {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.customer-review-main {
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1279px) {
+
+.customer-review-section .slick-next {
+    right: 0;
+}
+
+.customer-review-section .slick-prev {
+    left: 0;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+.customer-review {
+    height: unset;
+    margin-right: 11px;
+    margin-right: 10px;
+    padding: 22px 10px;
+}
+  button.slick-next.slick-arrow img , button.slick-prev.slick-arrow img {
+    width: 30px;
+}
+.customer-review-section .slick-prev {
+    left: 0;
+}
+.customer-review-section .slick-next {
+    right: 0;
+}
+
+.customer-review-section {
+    padding-bottom: 2rem;
+}
+}   
+</style>
+
+<div class="customer-review-main">
+      <div class="page-width page-width--full">
+        <h2 class="border_text heading title-sm">{{ section.settings.head }}</h2>
+
+    <div class="customer-review-section"> 
+      {% for block in section.blocks %}
+         <div class="customer-review">
+
+               
+                <div class="customer-review-heading">
+                    
+<svg width="133" height="23" viewBox="0 0 133 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.73778 6.84445C10.3556 4.94308 13.0455 4.94308 13.6633 6.84445C13.9396 7.69477 14.732 8.27048 15.626 8.27048C17.6253 8.27048 18.4565 10.8288 16.8391 12.0039C16.1158 12.5294 15.8131 13.4609 16.0894 14.3112C16.7072 16.2126 14.531 17.7937 12.9136 16.6186C12.1903 16.0931 11.2108 16.0931 10.4875 16.6186C8.87009 17.7937 6.69389 16.2126 7.31168 14.3112C7.58797 13.4609 7.2853 12.5294 6.56198 12.0039C4.94458 10.8288 5.77581 8.27048 7.77503 8.27048C8.6691 8.27048 9.4615 7.69477 9.73778 6.84445Z" fill="#FFBB00"/>
+<path d="M37.2446 6.84445C37.8624 4.94308 40.5523 4.94308 41.1701 6.84445C41.4464 7.69477 42.2388 8.27048 43.1329 8.27048C45.1321 8.27048 45.9633 10.8288 44.3459 12.0039C43.6226 12.5294 43.3199 13.4609 43.5962 14.3112C44.214 16.2126 42.0378 17.7937 40.4204 16.6186C39.6971 16.0931 38.7176 16.0931 37.9943 16.6186C36.3769 17.7937 34.2007 16.2126 34.8185 14.3112C35.0948 13.4609 34.7921 12.5294 34.0688 12.0039C32.4514 10.8288 33.2826 8.27048 35.2819 8.27048C36.1759 8.27048 36.9683 7.69477 37.2446 6.84445Z" fill="#FFBB00"/>
+<path d="M64.7505 6.84445C65.3683 4.94308 68.0582 4.94308 68.676 6.84445C68.9523 7.69477 69.7447 8.27048 70.6387 8.27048C72.638 8.27048 73.4692 10.8288 71.8518 12.0039C71.1285 12.5294 70.8258 13.4609 71.1021 14.3112C71.7199 16.2126 69.5437 17.7937 67.9263 16.6186C67.203 16.0931 66.2235 16.0931 65.5002 16.6186C63.8828 17.7937 61.7066 16.2126 62.3244 14.3112C62.6007 13.4609 62.298 12.5294 61.5747 12.0039C59.9573 10.8288 60.7885 8.27048 62.7877 8.27048C63.6818 8.27048 64.4742 7.69477 64.7505 6.84445Z" fill="#FFBB00"/>
+<path d="M92.2573 6.84445C92.8751 4.94308 95.565 4.94308 96.1828 6.84445C96.4591 7.69477 97.2515 8.27048 98.1456 8.27048C100.145 8.27048 100.976 10.8288 99.3586 12.0039C98.6353 12.5294 98.3326 13.4609 98.6089 14.3112C99.2267 16.2126 97.0505 17.7937 95.4331 16.6186C94.7098 16.0931 93.7303 16.0931 93.007 16.6186C91.3896 17.7937 89.2134 16.2126 89.8312 14.3112C90.1075 13.4609 89.8048 12.5294 89.0815 12.0039C87.4641 10.8288 88.2953 8.27048 90.2946 8.27048C91.1886 8.27048 91.981 7.69477 92.2573 6.84445Z" fill="#FFBB00"/>
+<path d="M119.763 6.84445C120.381 4.94308 123.071 4.94308 123.689 6.84445C123.965 7.69477 124.757 8.27048 125.651 8.27048C127.651 8.27048 128.482 10.8288 126.864 12.0039C126.141 12.5294 125.839 13.4609 126.115 14.3112C126.733 16.2126 124.556 17.7937 122.939 16.6186C122.216 16.0931 121.236 16.0931 120.513 16.6186C118.895 17.7937 116.719 16.2126 117.337 14.3112C117.613 13.4609 117.311 12.5294 116.587 12.0039C114.97 10.8288 115.801 8.27048 117.8 8.27048C118.694 8.27048 119.487 7.69477 119.763 6.84445Z" fill="#FFBB00"/>
+</svg>
+
+                </div>
+                <div class="customer-review-title">
+                     <span>{{ block.settings.customer_main_title }}</span>
+
+<svg style="display: block;
+    text-align: center;
+    margin: 20px auto auto;
+    filter: brightness(0);" width="51" height="5" viewBox="0 0 51 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.711914" y1="2.55225" x2="50.7119" y2="2.55225" stroke="#FC9E0D" stroke-width="4"/>
+</svg>
+
+                </div>
+                <div class="customer-review-image">
+                    <img src="{{ block.settings.customer_image | img_url: 'master' }}" alt="">
+                </div>
+                <div class="customer-review-content">
+                     <p>{{ block.settings.customer_main_content }}</p>
+                </div>
+
+               
+         </div>
+      {% endfor %}
+    </div>
+    </div>
+</div>
+
+  <script>
+  $(document).ready(function(){
+    $('.customer-review-section').slick({
+      arrows: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      adaptiveHeight: true,
+      prevArrow: '<button type="button" class="slick-prev"><img src="https://cdn.shopify.com/s/files/1/0932/4140/9814/files/Group_1000009805_1.svg?v=1742908907" alt="Previous"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="https://cdn.shopify.com/s/files/1/0932/4140/9814/files/Group_1000010324_1.svg?v=1742908907" alt="Next"></button>',
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+          {
+          breakpoint: 549,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+
+{% schema %}
+  {
+    "name": "Customer Review",
+    "settings": [
+      {
+          "type": "text",
+          "id": "head",
+          "label": "Heading"
+         },
+    ],
+    "blocks": [
+      {
+       "name": "Reviews",
+       "type": "slide",
+       "settings": [
+         {
+          "type": "text",
+          "id": "customer_main_title",
+          "label": "Title"
+         },
+         {
+          "type": "image_picker",
+          "id": "customer_image",
+          "label": "Image"
+         },
+          {
+          "type": "textarea",
+          "id": "customer_main_content",
+          "label": "Content"
+         }
+       ]
+     }
+    ],
+    "presets": [
+      {
+      "name": "Customer Review"
+      }
+   ]
+  }
+{% endschema %}
+
