@@ -290,4 +290,65 @@ button.slick-prev.slick-arrow img {
    ]
   }
 {% endschema %}
+///////////////////////////////////////////////////////////////////
+%%% trust-badges
+<style>
+  .main-trust h4{
+  font-size: 3.6rem;
+        font-weight: 600;
+        color: #252524;
+        text-align: center;
+        padding-top: 23px;
+  }
+    .trust-img {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+          flex-wrap: wrap;
+          padding-bottom: 50px;
+  }
+</style>
 
+<div class="main-trust page-width">
+  <h4>{{ section.settings.trust_title }}</h4>
+  <div class="trust-img">
+    {% for block in section.blocks %}
+      {% if block.settings.trust_img != blank %}
+        <img src="{{ block.settings.trust_img| img_url: 'small'}}" alt="trust-badges">
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trust Badges",
+  "settings": [
+
+    {
+  "type": "text",
+  "id": "trust_title",
+  "label": "Heading"
+}
+  ],
+   "blocks": [
+          {
+           "name": "trust",
+           "type": "trust",
+           "settings": [
+                   {
+            "type": "image_picker",
+            "id": "trust_img",
+            "label": "Image"
+          }
+       ]
+     }
+   ],
+
+  "presets" : [
+    {
+      "name" : "Trust Badges"
+    }
+  ]
+}
+{% endschema %}
